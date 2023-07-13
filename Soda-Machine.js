@@ -33,9 +33,9 @@ const sodas = [
 let attributeList = sodas.map(sodaView => {
   let sodaName = sodaView.name;
   let sodaImage = sodaView.image;
-  return ["name:", sodaName, "image:", sodaImage];
+  console.log(`name: ${sodaName}, image: ${sodaImage}`);
+  return [sodaName, sodaImage];
 });
-console.log(attributeList);
 
 // Expected Output:
 // name: Pepsi, image: fake.cdn/pepsi.jpg
@@ -49,9 +49,9 @@ let attributeList2 = sodas.map(sodaCal => {
   let sodaName = sodaCal.name;
   let sugarFree = sodaCal.sugarFree;
   let energy = sodaCal.energy;
+  console.log(`name: ${sodaName}, sugarFree: ${sugarFree}, energy: ${energy}`);
   return [sodaName, sugarFree, energy];
 });
-console.log(attributeList2);
 
 //Expected Output:
 // name: Pepsi, sugarFree: false, energy: false
